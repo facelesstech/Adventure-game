@@ -23,7 +23,7 @@ def realstart():
 ------------------------\_____/_/    \_\_|  |_|______|-----------------------
 -----------------------------------------------------------------------------
 ----------------------------------START GAME---------------------------------
-------------------------------TYPE YES TO BEGIN------------------------------
+------------------------------Press enter to being---------------------------
 -----------------------------------------------------------------------------
 \033[0m
 """
@@ -31,11 +31,7 @@ def realstart():
     
 def startyes():
     next = raw_input("==> ")
-    if "yes" in next:
-        startname()
-    else:
-        exit()
-
+    startname()
 
 def startname():
     print "Let's pick a name for you're self shall we."
@@ -55,7 +51,7 @@ def startname():
 def start():
     print "%r you are meet with 3 doors at the begining of the castle" % name
     sleep(1)
-    print "Please pick one. \033[31mRed\033[0m, \033[34mBlue\033[0m or \033[32mGreen\033[0m door."
+    print "Please pick one. \033[31mred\033[0m, \033[34mblue\033[0m or \033[32mgreen\033[0m door."
     pick = raw_input("==> ")
     os.system('clear')
     if pick == "red":
@@ -105,7 +101,7 @@ def red():
 def blue():
     print "%r There are 2 weapons you can choose" % name
     sleep(1)
-    print "Do you want the 'Sword' or the 'Axe'."
+    print "Do you want the 'sword' or the 'axe'."
     weapon = raw_input("==> ")
     os.system('clear')
     if "sword" in weapon:
